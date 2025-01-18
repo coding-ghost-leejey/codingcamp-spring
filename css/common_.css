@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  background-color: #b1e5db;
+  background-image: url("../images/bg_stars.png");
+  background-size: 500px auto;
+  font-family: "Noto Sans KR", sans-serif;
+  transition: background-color 0.5s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.album-container {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(24, 139, 147, 0.25);
+}
+
+.album-view {
+  background-color: #ffd6d4;
+  border-radius: 10px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-view img {
+  width: 170px;
+}
+
+/* 앨범 썸네일 리스트 */
+
+.album-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.album-list button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.album-list img {
+  width: 60%;
+}
+
+.album-list button:hover {
+  border: 2px solid black;
+}
+
+.album-list button:nth-child(1) {
+  background-color: #ffd6d4;
+}
+.album-list button:nth-child(2) {
+  background-color: #c4d39f;
+}
+.album-list button:nth-child(3) {
+  background-color: #bce0ff;
+}
+.album-list button:nth-child(4) {
+  background-color: #d4c4da;
+}
+
+/* 앨범 내용 */
+.album-contents h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.album-contents p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.theme-btns {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.theme-btns button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-btns #theme-light {
+  background-color: #ffcf24;
+}
+
+.theme-btns #theme-dark {
+  background-color: #6b83f7;
+}
+
+.theme-btns img {
+  width: 24px;
+}

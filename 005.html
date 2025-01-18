@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS로 컨텐츠 다루기</title>
+    <style>
+        body {
+            background-color: #dce7f5;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px dashed #b3c9e2;
+        }
+
+        .container h1 img {
+            width: 50px;
+        }
+
+        .dark {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark .container {
+            background-color: #2d3032;
+            border-color: #556793;
+        }
+
+        .theme-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="theme-container">
+        <button type="button" id="dark">다크테마</button>
+        <button type="button" id="light">라이트테마</button>
+    </div>
+    <div class="container">
+        <h1>Logo</h1>
+        <img src="./images/irangi_1.png" alt="irangi">
+        <button type="button">이미지 정보 얻어내기</button>
+        <p>
+            여기에 정보가 나타납니다.<br>
+            <span id="msg"></span>
+        </p>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const h1 = document.querySelector('h1')
+        const img = document.querySelector('img')
+        const btn = document.querySelector('button')
+        const msg = document.getElementById('msg');
+        const dark = document.getElementById('dark')
+        const light = document.getElementById('light')
+
+        dark.addEventListener('click', () => {
+            document.body.classList.add('dark')
+        })
+
+        light.addEventListener('click', () => {
+            document.body.classList.remove('dark')
+        })
+
+        h1.innerHTML = '컨텐츠 다뤄보기 <img src="./images/irangi_6.png" alt="irangi">';
+
+        btn.addEventListener('click', () => {
+            // 1. 버튼을 클릭하면 이미지정보를 가져온다
+            const url = img.getAttribute('src');
+            const alt = img.getAttribute('alt');
+
+            // 2. 가져온 이미지 정보를 span태그에 출력한다.
+            msg.innerHTML = '이미지경로 : ' + url + '<br> 대체텍스트 : ' + alt;
+        })
+
+
+    </script>
+</body>
+
+</html>

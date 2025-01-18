@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포털사이트 버튼따라해보기</title>
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* layout */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            height: 3000px;
+        }
+
+        .pager-container {
+            border-top: 1px solid #ebebeb;
+            margin-top: 50px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .pager-container button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid #ebebeb;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .pager-container button:hover {
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        }
+
+        .pager-container img {
+            width: 16px;
+        }
+
+        .pager-container strong {
+            color: #3a67ea;
+        }
+
+        .pager-container span {
+            color: #606060;
+        }
+
+        /* 플로팅 버튼 */
+        .floating-container {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .floating-container a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+        }
+
+        .floating-container a:hover {
+            background-color: #f3f3f3;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+        }
+
+        .floating-container img {
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 뉴스영역의 슬라이드 영역 버튼 -->
+    <div class="pager-container">
+        <button type="button">
+            <img src="./images/arrow_l.svg" alt="이전페이지">
+        </button>
+        <p>
+            <strong>언론사</strong> 더보기 <span>1/4</span>
+        </p>
+        <button type="button">
+            <img src="./images/arrow_r.svg" alt="다음페이지">
+        </button>
+    </div>
+
+    <!-- 우측하단의 플로팅 버튼영역 -->
+    <div class="floating-container">
+        <a href="#">
+            <img src="./images/gotop.svg" alt="위로가기">
+        </a>
+        <a href="#">
+            <img src="./images/setting.svg" alt="위로가기">
+        </a>
+    </div>
+</body>
+
+</html>

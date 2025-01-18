@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Javascript</title>
+    <style>
+        body {
+            background-color: #212121
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Hello Javascipt</h1>
+    <button type="button" id="btn">Click me!</button>
+
+    <script>
+        const h1 = document.getElementById('title');
+        const btn = document.getElementById('btn');
+
+        h1.style.color = 'tomato';
+
+        btn.addEventListener('click', () => {
+            h1.style.color = 'olive';
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+  background-color: #dff1f3;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-container {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #c9e2f4;
+  width: 400px;
+  margin: 50px auto 0;
+}
+
+.card-container .thumbs {
+  height: 250px;
+}
+
+.card-container .contents {
+  padding: 28px;
+}
+
+.card-container q {
+  font-size: 12px;
+  color: #848484;
+}
+
+.card-container h2 {
+  font-size: 25px;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.card-container p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card-container em {
+  color: #60a1d0;
+}
+
+.writer {
+  display: flex;
+  align-items: center;
+  padding: 0 28px 28px;
+}
+
+.writer img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.writer .user {
+  font-size: 11px;
+  display: block;
+}
+
+.writer .created {
+  font-size: 12px;
+  color: #848484;
+}

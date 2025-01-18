@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  background-color: #1b1b1b;
+  color: #a5a5a5;
+}
+
+.inner {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.page-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+/* 주요메뉴 */
+
+.page-header .gnb {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.page-header .gnb a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  transition: 0.4s;
+}
+
+.page-header .gnb a:hover {
+  color: #fff;
+}
+
+/* 우측 상단 메뉴 */
+
+.page-header .acc-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.page-header .acc-menu a {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* main 영역의 section */
+
+.contents-container {
+  margin-top: 90px;
+}
+
+.contents-container header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents-container h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.contents-container .list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents-container .list li {
+  width: calc(20% - 6px);
+}
+
+.contents-container .list a {
+  display: block;
+  height: 360px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.contents-container .list strong {
+  font-weight: 500;
+}
+
+.contents-container .list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.contents-container .list a:hover img {
+  transform: scale(1.1);
+}
+
+/* footer 영역 */
+.page-footer {
+  margin-top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 0;
+}
+.page-footer .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer .fnb {
+  display: flex;
+  gap: 20px;
+}
+
+.page-footer .sns {
+  display: flex;
+  gap: 12px;
+}
+
+.page-footer .sns a {
+  display: block;
+  width: 32px;
+}
+
+.page-footer .copyright {
+  margin-top: 80px;
+}
+
+.test ul {
+  list-style-type: disc;
+  margin: 30px;
+  padding: 20px;
+}
+
+.test li::marker {
+  color: gold;
+}

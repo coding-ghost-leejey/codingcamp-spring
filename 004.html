@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID, Class 이해하기</title>
+    <style>
+        p {
+            color: OliveDrab
+        }
+
+        .apple {
+            font-size: 30px;
+        }
+
+        .mango {
+            background-color: gold;
+        }
+
+        .apple.mango {
+            text-decoration: underline;
+        }
+
+        #berry {
+            text-decoration: none;
+            background-color: cadetblue;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="apple">Hello, World</p>
+    <p>HTML</p>
+    <p class="apple mango">CSS</p>
+    <p class="mango">JavaScript</p>
+    <p class="apple mango" id="berry">ID is powerfull!</p>
+
+    <script>
+        const pId = document.getElementById('berry');
+        const p = document.querySelector('p');
+        const pList = document.querySelectorAll('p');
+
+        pId.style.fontSize = '100px';
+        p.style.fontStyle = 'italic';
+        pList[0].style.color = 'tomato';
+        pList[1].style.color = 'blue';
+        pList[2].style.color = 'green';
+        pList[3].style.color = 'black';
+        pList[4].style.color = 'gold';
+        console.log(pList)
+    </script>
+</body>
+
+</html>
